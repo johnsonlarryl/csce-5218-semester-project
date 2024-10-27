@@ -1,0 +1,19 @@
+name: semester-project
+
+channels:
+  - conda-forge
+  - defaults
+
+dependencies:
+  - jupyter
+  - matplotlib
+  - pandas
+  - psycopg2
+  - pydot
+  - python=3.9.5
+  - pytest
+  - pytorch
+  - scikit-learn
+  - seaborn
+  - sqlalchemy
+  - torchvision
