@@ -4,3 +4,4 @@ export POSTGRES_HOSTNAME='localhost'
 export POSTGRES_DATABASE='chess-ml'
 export POSTGRES_USERNAME='postgres'
 export POSTGRES_PASSWORD='postgres'
+export POSTGRES_TOTAL_GAMES=100000
