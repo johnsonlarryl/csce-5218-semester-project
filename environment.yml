@@ -5,11 +5,13 @@ channels:
   - defaults
 
 dependencies:
+  - fastparquet
   - jupyter
   - matplotlib
   - pandas
   - psycopg2
   - pydot
+  - pyarrow
   - python=3.9.5
   - pytest
   - pytorch
