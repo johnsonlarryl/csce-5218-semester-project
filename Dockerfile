@@ -7,13 +7,6 @@ COPY . /semester_project
 
 RUN git config --global http.sslVerify false
 
-RUN --mount=type=secret,id=netrc,dst=/kaniko/.netrc echo Install dependencies\
-     && mkdir -p /root/ \
-     && ln -s /kaniko/.netrc /root/.netrc 2>/dev/null || : \
-     && python -m pip install --upgrade pip \
-     && pip install -r requirements.txt
-
-
 # Install wget and other necessary system packages
 RUN apt-get update && apt-get install -y wget && \
     apt-get clean && \
