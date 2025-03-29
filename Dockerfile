@@ -1,10 +1,5 @@
 FROM python:3.12.7-bookworm
 
-# Set up iff pip repo sources
-ENV PIP_EXTRA_INDEX_URL="https://gitlab.com/api/v4/groups/13299895/-/packages/pypi/simple https://gitlab.com/api/v4/groups/81763890/-/packages/pypi/simple"
-RUN pip config set global.trusted-host gitlab.com
-RUN sh -c 'pip config set global.extra-index-url "$PIP_EXTRA_INDEX_URL"'
-
 # Set the working directory in the container
 WORKDIR /semester_project
 
